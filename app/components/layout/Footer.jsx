@@ -58,19 +58,19 @@ export default function Footer() {
           <ul className="flex flex-col gap-3 text-sm text-[var(--color-white)]/80">
             <li className="flex items-start gap-2">
               <MapPin size={18} className="mt-0.5 shrink-0" />
-              <span>123 Wellness Avenue, Nairobi, Kenya</span>
+              <span>Kamakis,Ruiru</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone size={18} className="shrink-0" />
-              <span>+254 700 000 000</span>
+              <span>0141608535</span>
             </li>
             <li className="flex items-center gap-2">
               <Mail size={18} className="shrink-0" />
-              <span>hello@zeslynspa.com</span>
+              <span>@zeslynspa@ gmail.com</span>
             </li>
             <li className="flex items-start gap-2">
               <Clock size={18} className="mt-0.5 shrink-0" />
-              <span>Mon–Sat: 9:00 AM – 8:00 PM</span>
+              <span>Mon–Sat: 9:00 AM – 5:00 PM</span>
             </li>
           </ul>
         </div>

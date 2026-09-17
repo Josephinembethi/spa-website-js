@@ -21,3 +21,12 @@
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out;
 }
+
+@keyframes kenBurns {
+  0% { transform: scale(1) translate(0, 0); }
+  50% { transform: scale(1.15) translate(-2%, -2%); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+.animate-kenBurns {
+  animation: kenBurns 20s ease-in-out infinite;
+}

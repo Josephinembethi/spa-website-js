@@ -16,7 +16,7 @@ const slides = [
     subtext: "Skilled hands, healing touch, renewed energy.",
   },
   {
-    image: "/images/massage.jpg",
+    image: "/images/massage_room.jpg",
     tagline: "Rejuvenate.",
     subtext: "Leave feeling lighter, calmer, and recharged.",
   },

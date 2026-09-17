@@ -1,4 +1,4 @@
-import Hero from "./components/home/Hero";
+import Hero from "./components/Home/Hero";
 import Intro from "./components/Home/Intro";
 import Services from "./components/Home/Services";
 import Booking from "./components/Home/Booking";
@@ -9,6 +9,7 @@ export default function Home() {
       <Intro />
       <Services />
       <Booking />
+      
     </main>
   );
 }
