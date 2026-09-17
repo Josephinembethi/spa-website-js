@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, Sparkles, ShieldCheck, Clock } from "lucide-react";
-import Booking from "../components/home/Booking";
+import Booking from "../components/Home/Booking";
 
 const stats = [
   { number: "2+", label: "Years of Experience" },

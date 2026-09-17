@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Booking from "../components/home/Booking";
+import Booking from "../components/Home/Booking";
 
 const massageServices = [
   {
