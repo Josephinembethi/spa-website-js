@@ -7,7 +7,6 @@ const quickLinks = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Gallery", href: "/gallery" },
-  { name: "Testimonials", href: "/testomonials" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -58,7 +57,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-3 text-sm text-[var(--color-white)]/80">
             <li className="flex items-start gap-2">
               <MapPin size={18} className="mt-0.5 shrink-0" />
-              <span>Kamakis,Ruiru</span>
+              <span>Kamakis, Ruiru</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone size={18} className="shrink-0" />
@@ -66,7 +65,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={18} className="shrink-0" />
-              <span>@zeslynspa@ gmail.com</span>
+              <span>zeslynspa@gmail.com</span>
             </li>
             <li className="flex items-start gap-2">
               <Clock size={18} className="mt-0.5 shrink-0" />
@@ -82,7 +81,7 @@ export default function Footer() {
           </h4>
           <div className="flex gap-4">
             {socialLinks.map(({ icon: Icon, href, label }) => (
-           <a   
+             <a 
                 key={label}
                 href={href}
                 target="_blank"
