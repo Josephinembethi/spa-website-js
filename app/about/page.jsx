@@ -22,6 +22,8 @@ const testimonials = [
   { quote: "The most relaxing experience I've had in years. The staff truly cares about their clients.", name: "Amina W." },
   { quote: "Booked a hot stone massage and left feeling like a completely new person. Highly recommend!", name: "James K." },
   { quote: "Clean, calming, and professional. Zeslyn has become my monthly self-care ritual.", name: "Grace M." },
+  { quote: "Flawless environment. Skilled hands, renewing energy, and a completely pristine atmosphere.", name: "Susan F." },
+
 ];
 
 export default function About() {
@@ -37,7 +39,6 @@ export default function About() {
 
   return (
     <main>
-      {/* ---------- Hero ---------- */}
       <section className="relative w-full h-[90vh] overflow-hidden">
         <Image
           src="/images/hero.jpg"
@@ -45,7 +46,7 @@ export default function About() {
           fill
           priority
           sizes="100vw"
-          className="object-cover animate-kenBurns"
+          className="object-cover object-center animate-kenBurns"
         />
         <div className="absolute inset-0 bg-[var(--color-charcoal)]/40" />
 
@@ -70,11 +71,11 @@ export default function About() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 rounded-2xl overflow-hidden">
             <Image
-              src="/images/massage_bed.jpg"
+              src="/images/massageBed.jpeg"
               alt="Our Story"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover  w-full h-full  rounded-2xl shadow-lg object-center"
             />
           </div>
 

@@ -8,33 +8,52 @@ const massageServices = [
     description:
       "A gentle, flowing massage using long strokes and kneading to ease tension and promote deep relaxation. Ideal for first-time visitors or anyone looking to unwind after a long week.",
     image: "/images/swedish_massage.jpg",
+    price:"KSH 8600",
   },
   {
     name: "Deep Tissue Massage",
     description:
       "Targets deeper layers of muscle and connective tissue to relieve chronic tension and stiffness. A firmer-pressure treatment, best suited for those with specific areas of muscle tightness.",
     image: "/images/deep_tissue_massage.jpg",
+    price:"KSH 8600",
   },
   {
     name: "Hot Stone Massage",
     description:
       "Warm, smooth stones are placed on key points of the body to melt away muscle stiffness while soothing both body and mind. A deeply calming experience from start to finish.",
     image: "/images/stone_massage.jpg",
+    price:"KSH 10000",
   },
   {
-    name: "Body Treatment",
+    name: "Body Scrub",
     description:
       "A full-body treatment combining exfoliation and nourishing application to leave your skin feeling smooth, refreshed, and revitalized from head to toe.",
     image: "/images/body_treatment.jpg",
+    price:"KSH 6500",
   },
 ];
 
 const facialServices = [
   {
-    name: "Facial Treatment",
+    name: "Facial Steaming",
     description:
-      "A rejuvenating treatment that cleanses, exfoliates, and hydrates your skin using quality products suited to your skin type. Leaves your complexion refreshed with a natural, healthy glow.",
+      "Uses steam to open up the pores of the skin, allowing for deep cleansing and hydration. It helps to remove impurities, excess oil, and dead skin cells, promoting a clearer and healthier complexion. The steam also increases blood circulation, which can enhance the delivery of nutrients to the skin and improve its overall appearance.",
+    image: "/images/steaming.jpg",
+    price:"KSH 6500",
+  },
+   {
+    name: "Facial Cleansing",
+    description:
+      "A gentle, non-invasive treatment that removes impurities and excess oil from the skin, leaving it feeling clean and refreshed.",
+    image: "/images/FacialCleansing.jpg",
+    price:"KSH 6500",
+  },
+   {
+    name: "Full Facial Treatment",
+    description:
+      "A comprehensive facial treatment that combines cleansing, exfoliation, and moisturizing to leave your skin looking radiant and feeling refreshed.",
     image: "/images/facial_treatment.jpg",
+    price:"KSH 9000",
   },
 ];
 
@@ -44,12 +63,14 @@ const HandAndFootServices = [
     description:
       "A complete nail care service covering shaping, cuticle care, and polish for both hands and feet. A relaxing finishing touch to any spa visit.",
     image: "/images/pedicure.jpg",
+    price:"KSH 6500",
   },
   {
     name: "Manicure",
     description:
       "A soothing treatment focused on softening and nourishing tired hands and feet, combining gentle massage with moisturizing care for lasting comfort.",
     image: "/images/manicure.jpg",
+    price:"KSH 6500",
   },
 ];
 
@@ -64,6 +85,11 @@ function ServiceCard({ service }) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
+          {service.price && (
+          <span className="absolute bottom-3 right-3 bg-[var(--color-white)] text-[var(--color-maroon)] text-sm font-semibold px-3 py-1 rounded-full shadow-md z-10">
+            KSh {service.price}
+          </span>
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-xl font-serif font-semibold text-[var(--color-maroon)] mb-2">

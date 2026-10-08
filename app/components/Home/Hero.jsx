@@ -9,28 +9,34 @@ const slides = [
     image: "/images/hero.jpg",
     tagline: "Relax.",
     subtext: "Let go of stress in a space designed for stillness.",
+    position: "object-center", 
   },
   {
-    image: "/images/hero3.jpg",
+    image: "/images/massageRoom1.jpeg",
     tagline: "Restore.",
     subtext: "Skilled hands, healing touch, renewed energy.",
+    position: "object-center",
   },
   {
-    image: "/images/massage_room.jpg",
+    image: "/images/massageRoom2.jpeg",
     tagline: "Rejuvenate.",
     subtext: "Leave feeling lighter, calmer, and recharged.",
+    position: "object-center",
   },
   {
-    image: "/images/massageA.jpg",
+    image: "/images/massageBed.jpeg", 
     tagline: "Unwind.",
     subtext: "Every session is a step back to yourself.",
+    position: "object-top", 
   },
   {
     image: "/images/stone_massage.jpg",
     tagline: "Reconnect.",
     subtext: "Mind and body, brought back into balance.",
+    position: "object-center",
   },
 ];
+
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,14 +65,12 @@ export default function Hero() {
   fill
   priority={index === 0}
   sizes="100vw"
-  className="object-cover"
+  className="object-cover  w-full h-full"
 />
-          {/* Dark overlay so text stays readable over any image */}
           <div className="absolute inset-0 bg-[var(--color-charcoal)]/40" />
         </div>
       ))}
 
-      {/* Text content, sits above the image layers */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
         <h1
           key={currentIndex}
@@ -88,7 +92,6 @@ export default function Hero() {
         </Link>
       </div>
 
-      {/* Dot indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex gap-3">
         {slides.map((_, index) => (
           <button
