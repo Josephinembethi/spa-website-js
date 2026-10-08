@@ -4,10 +4,10 @@ import Booking from "../components/Home/Booking";
 const galleryImages = [
   { src: "/images/Interior5.jpeg", alt: "Zeslyn Massage & Spa interior" },
   { src: "/images/Packages.jpeg", alt: "Prices" },
-  { src: "/images/Interior8.jpeg", alt: "Zeslyn Massage & Spa interior" },
+  { src: "/images/Interior6.jpeg", alt: "Zeslyn Massage & Spa interior" },
   { src: "/images/Interior2.jpeg", alt: "Zeslyn Massage & Spa interior" },
   { src: "/images/Interior.jpeg", alt: "Tranquil spa setting" },
-  { src: "/images/massageRoom1.jpeg", alt: "Spa treatment room" },
+  { src: "/images/MassageRoom1.jpeg", alt: "Spa treatment room" },
   { src: "/images/massage.jpg", alt: "Massage therapy session" },
   { src: "/images/swedish_massage.jpg", alt: "Swedish massage session" },
   { src: "/images/Hotstone.jpeg", alt: "Hot stone massage treatment" },

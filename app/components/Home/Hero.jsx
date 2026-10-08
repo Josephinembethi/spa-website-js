@@ -6,25 +6,25 @@ import Link from "next/link";
 
 const slides = [
   {
-    image: "/images/hero.jpg",
+    image: "/images/Interior.jpeg",
     tagline: "Relax.",
     subtext: "Let go of stress in a space designed for stillness.",
     position: "object-center", 
   },
   {
-    image: "/images/massageRoom1.jpeg",
+    image: "/images/MassageRoom1.jpeg",
     tagline: "Restore.",
     subtext: "Skilled hands, healing touch, renewed energy.",
     position: "object-center",
   },
   {
-    image: "/images/massageRoom2.jpeg",
+    image: "/images/MassageRoom2.jpeg",
     tagline: "Rejuvenate.",
     subtext: "Leave feeling lighter, calmer, and recharged.",
     position: "object-center",
   },
   {
-    image: "/images/massageBed.jpeg", 
+    image: "/images/MassageBed.jpeg", 
     tagline: "Unwind.",
     subtext: "Every session is a step back to yourself.",
     position: "object-top", 
